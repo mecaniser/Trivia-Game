@@ -1,0 +1,31 @@
+body{
+    background: url(../images/carbon_fibre_big.png);
+}
+.container{
+    background:url(../images/carbon_fibre_v2.png);
+    padding-bottom: 25px;
+}
+.panel{
+    background: navajowhite;
+    padding-left: 200px;
+    padding-top: 35px;
+    padding-bottom: 35px;   
+}
+img{
+    width: 45%;
+}
+.answerList{
+    border: solid 10px;
+    width: 35%;
+    min-height: auto;
+    border-bottom-color: red;
+    border-top-color: lightblue;
+    border-right-color: blue;
+}
+.thisChoice{
+    margin-left: 20px;
+}
+.thisChoice:hover, .thisChoice:active {font-size: 150%;}
+.logo{
+    width: 15%;
+}
