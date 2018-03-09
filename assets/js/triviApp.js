@@ -136,7 +136,7 @@ function answerPage() {
     }
 
     if (currentQuestion == (triviaQuestions.length - 1)) {
-        setTimeout(scoreboard, 2000)
+        setTimeout(scoreboard, 3000)
     } else {
         currentQuestion++;
         setTimeout(newQuestion, 6000);
