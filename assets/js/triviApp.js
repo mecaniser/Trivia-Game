@@ -1,19 +1,19 @@
 
 var search = [
-'x5+2006', 
-'BMW+driving+pleasure 7+series',
-'BMW+E30',
-'BMW+M1',
-'BMW+sport+M6+M3',
-'BMW+motors+bmw',
-'BMW+760+Li',
-'BMW+random',
-'BMW+750i',
-'BMW+2009+BMW+ActiveHybrid+7',
-'BMW+Rolls+Royce',
-'BMW+M5',
-'BMW+headquartered',
-'BMW+Karl+Rapp'
+'drift', 
+'drive',
+'E30',
+'driving+M1',
+'M5',
+'motors',
+'v12',
+'drifting',
+'i3',
+'i8',
+'rolls-royce',
+'M5',
+'headquatre',
+'founder'
 ];
 var currentQuestion;
 var correctAnswer;
@@ -102,11 +102,11 @@ function answerPage() {
     $('#currentQuestion').empty();
     $('.thisChoice').empty(); //Clears question page
     $('.question').empty();
-    // var APIKey = "166a433c57516f51dfab1f7edaed8413";
+    var APIKey = "0iKJvSjZ5WSw65Kch4s0mddSPH8UAVIa";
     var rightAnswerText = triviaQuestions[currentQuestion].answerList[triviaQuestions[currentQuestion].answer];
     var rightAnswerIndex = triviaQuestions[currentQuestion].answer;
     //giphy api
-    var giphyURL = "http://api.giphy.com/v1/gifs/search?q=BMW+" + search[currentQuestion] + "&limit=3&rating=pg&api_key=0iKJvSjZ5WSw65Kch4s0mddSPH8UAVIa";
+    var giphyURL = "https://api.giphy.com/v1/gifs/search?q=cars+bmw+" + search[currentQuestion] + "&rating=g&api_key="+ APIKey;
     $.ajax({
         url: giphyURL,
         method: 'GET'
@@ -139,7 +139,7 @@ function answerPage() {
         setTimeout(scoreboard, 2000)
     } else {
         currentQuestion++;
-        setTimeout(newQuestion, 6000);
+        setTimeout(newQuestion, 3000);
     }
 }
 
