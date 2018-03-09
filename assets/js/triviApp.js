@@ -139,7 +139,7 @@ function answerPage() {
         setTimeout(scoreboard, 2000)
     } else {
         currentQuestion++;
-        setTimeout(newQuestion, 3000);
+        setTimeout(newQuestion, 6000);
     }
 }
 
